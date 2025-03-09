@@ -1,4 +1,4 @@
-# Dicoding Collection Dashboard ✨
+# Project_Zikri Abdilah ✨
 
 ## Setup Environment - Anaconda
 ```
