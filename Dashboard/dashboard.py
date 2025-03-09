@@ -8,7 +8,7 @@ st.set_page_config(page_title="Dashboard Penyewaan Sepeda", layout="wide")
 # Membaca dataset
 @st.cache_data
 def load_data():
-    df = pd.read_csv("dashboard/hour.csv")
+    df = pd.read_csv("Dashboard/hour.csv")
     df['dteday'] = pd.to_datetime(df['dteday'])
     df['hour'] = df['dteday'].dt.hour
     df['dayofweek'] = df['dteday'].dt.dayofweek
