@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import plotly.graph_objects as go
 
 # Konfigurasi Tema
 st.set_page_config(page_title="Dashboard Penyewaan Sepeda", layout="wide")
@@ -9,7 +8,7 @@ st.set_page_config(page_title="Dashboard Penyewaan Sepeda", layout="wide")
 # Membaca dataset
 @st.cache_data
 def load_data():
-    df = pd.read_csv('hour.csv')
+    df = dashboard/hour.csv('hour.csv')
     df['dteday'] = pd.to_datetime(df['dteday'])
     df['hour'] = df['dteday'].dt.hour
     df['dayofweek'] = df['dteday'].dt.dayofweek
