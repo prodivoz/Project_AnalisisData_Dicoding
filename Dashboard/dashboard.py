@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import plotly.express as px
+import plotly.graph_objects as go
 
 # Konfigurasi Tema
 st.set_page_config(page_title="Dashboard Penyewaan Sepeda", layout="wide")
