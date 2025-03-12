@@ -6,7 +6,7 @@ import seaborn as sns
 # Membaca dataset
 @st.cache_data
 def load_data():
-    df = pd.read_csv('hour.csv')
+    df = pd.read_csv("Dashboard/hour.csv")
     df['dteday'] = pd.to_datetime(df['dteday'])
     df['is_weekday'] = df['weekday'].apply(lambda x: 1 if x in range(1, 6) else 0)
     return df
