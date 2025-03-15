@@ -5,8 +5,8 @@ import seaborn as sns
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv('day.csv')
-    df = pd.read_csv('hour.csv')
+    df = pd.read_csv("Dashboard/day.csv")
+    df = pd.read_csv("Dashboard/hour.csv")
     df['dteday'] = pd.to_datetime(df['dteday'])
     df['hour'] = df['dteday'].dt.hour
     df['month'] = df['dteday'].dt.month
